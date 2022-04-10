@@ -1,0 +1,11 @@
+{
+  "name": "lbdm44-examples",
+  "version": "0.0.0",
+  "repository": "https://github.com/lbdm44/examples.git",
+  "author": "lbdm44 <lewis.miller.github@pm.me>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "yarn-packages/*"
+  ]
+}
