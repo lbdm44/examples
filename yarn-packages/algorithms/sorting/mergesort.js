@@ -22,8 +22,13 @@ function merge(arr1, arr2) {
 
 /**
  * 
- * @param {number[]} input 
- * @returns 
+ * @remarks
+ * 
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(n)
+ *
+ * @param {number[]} input
+ * @returns {number[]}
  */
 function mergesort(input) {
   if (input.length <= 1) {

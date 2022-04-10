@@ -13,5 +13,6 @@ describe("mergesort", () => {
 
   test('it should handle an array with multiple items in it', () => {
     expect(mergesort([3, 2, 1])).toEqual([1, 2, 3]);
+    expect(mergesort([3, 4, 5, 0, 2, 1])).toEqual([0, 1, 2, 3, 4, 5]);
   });
 });
