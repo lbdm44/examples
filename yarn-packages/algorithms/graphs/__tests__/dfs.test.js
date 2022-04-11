@@ -1,16 +1,16 @@
 const { describe, expect, test } = require("@jest/globals");
 
-const { bfs } = require("../bfs");
+const { dfs } = require("../dfs");
 const { Node } = require("../Node");
 
-describe("BFS", () => {
+describe("DFS", () => {
   test("it should not find a node if none match criteria", () => {
     const root = new Node(1);
 
     // Our task will always return false;
     const task = (_) => false;
 
-    expect(bfs(root, task)).toBeNull();
+    expect(dfs(root, task)).toBeNull();
   });
 
   test("it should find a node if it matches the criteria", () => {
@@ -28,7 +28,7 @@ describe("BFS", () => {
     // Our task will always return true;
     const task = (n) => n.value === 3;
 
-    expect(bfs(root, task)).toBe(node3);
+    expect(dfs(root, task)).toBe(node3);
   });
 
   test("it should handle a circular graph", () => {
@@ -47,6 +47,6 @@ describe("BFS", () => {
     // Our task will always return true;
     const task = (n) => n.value === 5;
 
-    expect(bfs(root, task)).toBe(node5);
+    expect(dfs(root, task)).toBe(node5);
   });
 });
